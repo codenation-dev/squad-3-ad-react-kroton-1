@@ -1,6 +1,7 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { Link } from 'react-router-dom';
+import logo from '../assets/img/logo.svg';
+import './Home.css';
 
 function App() {
   return (
@@ -8,16 +9,14 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          Edit <code>src/pages/Home.js</code> and save to reload.
         </p>
-        <a
+        <Link
           className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
+          to="/about"
         >
-          Learn React
-        </a>
+          Go To About Page
+        </Link>
       </header>
     </div>
   );
